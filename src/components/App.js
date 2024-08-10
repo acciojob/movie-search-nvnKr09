@@ -9,7 +9,7 @@ const App = () => {
   const fetchMovies = async () => {
     const apiKey = '99eb9fd1';
     try {
-      const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${input}`);
+      const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${input}`); 
       const data = await response.json();
       console.log(response);
       console.log(data);
